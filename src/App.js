@@ -3,6 +3,7 @@ import "./App.css";
 import Layout from "./components/Layout.js";
 import NavBar from "./components/NavBar.js";
 import Container from "./components/Container.js";
+import GroupItems from "./components/GroupItems.js";
 import { SearchInput } from "evergreen-ui";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             // value={this.state.searchQuery}
             // onChange={this.handleChange}
           />
+          <GroupItems />
         </Container>
       </Layout>
     </div>

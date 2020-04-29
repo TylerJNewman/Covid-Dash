@@ -9,6 +9,7 @@ import {
   Pill,
   Spinner,
   Position,
+  Avatar,
 } from "evergreen-ui";
 
 const NavBar = () => {
@@ -67,10 +68,8 @@ const NavBar = () => {
           <a href="#">Get Started</a>
         </Tab>
       </Pane>
-      <Pane alignItems="center" display="flex">
-        <Tab style={styles.link}>
-          <a href="#">Todo</a>
-        </Tab>
+      <Pane>
+        <Avatar name="Tyler Newman" marginRight={16} />
       </Pane>
       {/* <SearchBar /> */}
       {/*<NavOptions typoColor={typoColor} />*/}
