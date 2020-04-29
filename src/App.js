@@ -1,13 +1,26 @@
 import React from "react";
-import Layout from "./components/Layout.js";
 import "./App.css";
+import Layout from "./components/Layout.js";
 import NavBar from "./components/NavBar.js";
+import Container from "./components/Container.js";
+import { SearchInput } from "evergreen-ui";
 
 function App() {
   return (
     <div className="App">
       <Layout>
         <NavBar />
+        <Container>
+          <SearchInput
+            autoFocus
+            height={40}
+            width="100%"
+            marginTop={40}
+            placeholder="Search components and foundation..."
+            // value={this.state.searchQuery}
+            // onChange={this.handleChange}
+          />
+        </Container>
       </Layout>
     </div>
   );
